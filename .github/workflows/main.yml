@@ -1,6 +1,6 @@
 name: update my workflow
 
-on:  [push]
+on: [push]
 
 jobs:
     build_and_publish:
