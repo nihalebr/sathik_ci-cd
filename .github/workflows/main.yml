@@ -9,7 +9,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: build and push image
-            run: |
+            - run: |
                 docker login --username mohamedsathik --password ${{ secrets.GH_PAT }} ghcr.io
                 docker build . --tag ghcr.io/mohamedsathik/webpage:latest
                 docker push ghcr.io/mohamedsathik/webpage:latest
